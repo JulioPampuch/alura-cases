@@ -1,6 +1,11 @@
+import Link from 'next/link'
+
+
 const FaqPage = () => {
   return (
-    <div>Test</div>
+    <Link href='/'>
+      <div>Faq page</div>
+    </Link>
   )
 }
 
