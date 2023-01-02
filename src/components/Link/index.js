@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 
 const Link = (props) => {
   return (
-    <NextLink href={props.page}>
+    <NextLink href={props.href}>
       <p>{props.children}</p>
     </NextLink>
   )
