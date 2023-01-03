@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import PageTitle from '../src/components/PageTitle'
 
 export async function getServerSideProps() {
   console.log('Acessado')
@@ -23,9 +23,9 @@ const FaqPage = ({ FAQ }) => {
 
   return (
     <>
-    <Head>
-      <title>FAQ - Perguntas Frequentes</title>
-    </Head>
+      <PageTitle>
+        FAQ - Perguntas Frequentes
+      </PageTitle>
       <Link href='/'>
         <div>Faq page</div>
       </Link>
