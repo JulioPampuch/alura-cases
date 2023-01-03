@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 export async function getServerSideProps() {
@@ -22,6 +23,9 @@ const FaqPage = ({ FAQ }) => {
 
   return (
     <>
+    <Head>
+      <title>FAQ - Perguntas Frequentes</title>
+    </Head>
       <Link href='/'>
         <div>Faq page</div>
       </Link>

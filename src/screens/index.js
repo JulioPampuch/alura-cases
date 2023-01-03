@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Footer from '../components/Footer'
 import Link from '../components/Link'
 import { theme } from '../Theme/theme';
@@ -21,6 +22,9 @@ function SideImage() {
         }
       }}
     >
+      <Head>
+        <title>Home - Alura Cases</title>
+      </Head>
       <Box
         styleSheet={{
           top: 0,
@@ -228,6 +232,7 @@ export default function HomeScreen() {
                     styleSheet={{
                       textVariant: theme.typography.variants.heading1,
                       color: theme.colors.neutral["900"],
+                      fontWeight: 700,
                     }}
                   >
                     Alura Cases
