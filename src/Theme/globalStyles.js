@@ -40,7 +40,7 @@ const GlobalStyles = () => {
         }
         body,
         #__next {
-          height: 100%;
+            height: 100%;
         }
         #__next {
           display: flex;
@@ -54,7 +54,6 @@ const GlobalStyles = () => {
           align-items: stretch;
         }
     `}</style>
-    
   )
 }
 
