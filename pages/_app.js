@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import GlobalStyles from '../src/Theme/globalStyles'
 import '../styles/globals.css'
 
@@ -7,8 +8,8 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5X5BT3K8E"></script>
-        <script
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-H5X5BT3K8E"></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
           window.dataLayer = window.dataLayer || [];
