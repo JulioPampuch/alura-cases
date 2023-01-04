@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import GlobalStyles from '../src/Theme/globalStyles'
+import GlobalStyles from '../src/theme/globalStyles'
 import '../styles/globals.css'
 
 export default function App({ Component, pageProps }) {

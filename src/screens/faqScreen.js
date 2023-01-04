@@ -1,7 +1,7 @@
 import Footer from "../components/Footer"
 import Link from "next/link"
-import { theme } from "../Theme/theme"
-import { Image, Box, Text, Icon, Input, Button } from '../Theme/components';
+import { theme } from "../theme/theme"
+import { Image, Box, Text, Icon, Input, Button } from '../theme/components';
 import PageTitle from "../components/PageTitle";
 
 export default function FAQScreen({ faq }) {
