@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import PageTitle from '../src/components/PageTitle'
 
-import FAQScreen from '../src/screens/FAQScreen';
+import FAQScreen from '../src/screens/faqScreen';
 
 export default FAQScreen; 
 
