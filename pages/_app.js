@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* <!-- Google tag (gtag.js) --> */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-H5X5BT3K8E"></Script>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-H5X5BT3K8E"></Script>
         <Script
           dangerouslySetInnerHTML={{
             __html: `
@@ -19,6 +19,18 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-H5X5BT3K8E');
           `
           }}
+        /> */}
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
+          ga('send', 'pageview');
+        `}
+        </Script>
+        <Script
+          src="https://www.google-analytics.com/analytics.js"
+          strategy="afterInteractive"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
