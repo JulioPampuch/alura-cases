@@ -21,7 +21,12 @@ export default function App({ Component, pageProps }) {
           }}
         /> */}
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      </Head>
+      <Script id="google-analytics" strategy="afterInteractive">
           {`
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
           ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
@@ -32,10 +37,6 @@ export default function App({ Component, pageProps }) {
           src="https://www.google-analytics.com/analytics.js"
           strategy="afterInteractive"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </Head>
       <GlobalStyles />
       <Component {...pageProps} />
     </>
