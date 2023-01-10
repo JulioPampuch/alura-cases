@@ -21,22 +21,24 @@ export default function App({ Component, pageProps }) {
           }}
         /> */}
 
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
-          ga('send', 'pageview');
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-H5X5BT3K8E');
         `}
-        </Script>
-        <Script
-          src="https://www.google-analytics.com/analytics.js"
-          strategy="afterInteractive"
-        />
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
       <GlobalStyles />
       <Component {...pageProps} />
     </>
